@@ -28,7 +28,8 @@ export default function orderobjectproperties(obj, orderArray) {
 
   // Второй вариант! С выбросом ошибки
 
-  const internalObj = { ...obj }; // ввел потому что линт ругается на 41ю строку, при оригинальном переданном обьекте. 
+  const internalObj = { ...obj }; // ввел потому что линт ругается на 41ю строку, при оригинальном 
+                                  // переданном обьекте. 
                                   // думал попробовать с прокси, но запутался. 
   const properOrder = [];
   for (let i = 0; i < orderArray.length; i += 1) {
